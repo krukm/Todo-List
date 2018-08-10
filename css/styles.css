@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(to right, #f857a6, #ff5858);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    margin: 10rem auto;
+    width: 20%;
+    background-color: #eee;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0.25em;
+    Box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+
+form {
+    width: 100%;
+}
+
+h1 {
+    font-size: 150%;
+}
+
+p {
+    font-size: 75%;
+    margin: 0 0 0.75em 0;
+}
+
+input {
+    width: 93%;
+    padding: 1em;
+    border-radius: 0.45em;
+    border: 1px solid #bbb;
+    background-color: #eee;
+    outline: none;
+}
+
+li {
+    margin: 0.25em 0 0.25em 2em;
+    padding: 0.15em;
+    width: 90%;
+    position: relative;
+}
+
+li:hover {
+    background-color: #bbb;
+    border-radius: 0.25em;
+}
+
+li:hover .complete {
+    background-color: #bbb;
+}
+
+.strike {
+    text-decoration: line-through;
+}
+
+.strike .complete {
+    display: none;
+}
+
+.complete {
+    background-color: #eee;
+    color: #ff69b4;
+    border: 1px solid #ff69b4;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+    outline: none;
+}
+
+.complete:hover {
+    border: 1px solid #ff1493;
+    color:#ff1493;
+}
+
+.close {
+    background-color: inherit;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 1;
+}
+
+.close:hover {
+    color: #ff1493;
+}
+
+#add {
+    background-color: #ff69b4;
+    color: #eee;
+    font-size: 100%;
+    width: 100%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 0.25em;
+    margin: 1em 0 0 0;
+    outline: none;
+    cursor: pointer;
+}
+
+#add:hover {
+    background-color: #ff1493;
+}

@@ -1,9 +1,5 @@
 "use strict";
 
-angular
-    .module("TodoApp")
-    .controller("TodoController", TodoController);
-
 function TodoController () {
 
     const vm = this;
@@ -25,5 +21,19 @@ function TodoController () {
             completed: false
         }
     ];
+    vm.addTask = (newTask) => {
+        vm.list.push(newTask);
+        document.querySelector(".input__new_task").value = "";
+    };
+    vm.removeItem = (index) => {
+        vm.list.splice(index, 1);
+    };
+    vm.completeTask = (index) => {
+        vm.list[index].completed = true;
+    };
 }
+
+angular
+    .module("TodoApp")
+    .controller("TodoController", TodoController);
 
